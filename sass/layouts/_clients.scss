@@ -1,0 +1,45 @@
+.clients-title {
+	
+	@include title
+}
+
+.clients-list {
+	display: flex;
+	gap: 30px;
+	justify-content: center;
+	align-items: center;
+
+	&__link {
+		display: flex;
+			align-items: center;
+			justify-content: center;
+			min-width: 170px;
+			min-height: 92px;
+		
+			border: 1px solid #afb1b8;
+			border-radius: 4px;
+			color: #afb1b8;
+		
+			transition: color 250ms var(--cubic-bezier),
+			 border-color 250ms var(--cubic-bezier);
+
+			 &:hover ,
+			 &:focus {
+					color: var(--accent);
+					border-color: var(--accent);
+
+			 }
+	}
+
+	&__icon {
+
+			fill: currentColor;
+		
+			transition: fill 250ms var(--cubic-bezier);
+
+	}
+}
+
+
+
+
